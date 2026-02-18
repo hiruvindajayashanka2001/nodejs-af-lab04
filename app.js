@@ -10,3 +10,9 @@ fs.readFile("file.txt", "utf8", (err, data) => {
   }
   console.log(data);
 });
+
+fs.writeFile('file.txt', 'Write this to file.txt', function (err) {
+  if (err) throw err;
+  console.log('File saved!');
+});
+
